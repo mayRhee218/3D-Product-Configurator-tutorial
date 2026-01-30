@@ -1,4 +1,4 @@
-import { PresentationControls, Stage } from "@react-three/drei";
+import { CameraControls, PresentationControls, Stage } from "@react-three/drei";
 import { MeshReflectorMaterial } from "@react-three/drei";
 
 const Experience = () => {
@@ -6,7 +6,7 @@ const Experience = () => {
         <PresentationControls // drei library
         speed={1.5} 
         global 
-        zoom={0.2} 
+        zoom={1.2} 
         polar={[-0.1, Math.PI / 4]} 
         /**
         -0.1: Could see bottom more if number smaller(more negative)
@@ -17,6 +17,7 @@ const Experience = () => {
             environment={"city"} 
             intensity={0.1} 
             contactShadow={false}
+            adjustCamera={false} // Auto-fill prevention
             >
                 <mesh>
                     <boxGeometry />

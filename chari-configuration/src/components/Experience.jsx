@@ -24,7 +24,7 @@ const Experience = () => {
                     <meshNormalMaterial />
                 </mesh>
             </Stage>
-            <mesh rotation={[-Math.PI / 2, 0, 0]} position-y={-2}>
+            <mesh rotation={[-Math.PI / 2, 0, 0]} position-y={-0.7}>
                     <planeGeometry args={[170, 170]} />
                     <MeshReflectorMaterial
                         blur={[300, 100]}
